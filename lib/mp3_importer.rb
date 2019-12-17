@@ -13,6 +13,10 @@ class MP3Importer
     puts "names=#{filenames}"
     filenames
   end
-end 
+  
+  def import(song)
+    Song.new_by_filename(song)
+  end
+end
     
     
